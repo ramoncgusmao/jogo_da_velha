@@ -1,0 +1,72 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #f9f9f9;
+  }
+  
+  h1 {
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom: 40px;
+  }
+  
+  .board {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 1px;
+	background-color: #333;
+	border-radius: 5px;
+	overflow: hidden;
+  }
+  
+  .square {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 72px;
+	font-weight: 700;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .square:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .square.x {
+	background-color: #f44336;
+  }
+  
+  .square.o {
+	background-color: #2196f3;
+  }
+  
+  .status {
+	font-size: 36px;
+	font-weight: 700;
+	margin-top: 40px;
+  }
+  
+  .restart-btn {
+	background-color: #4caf50;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 16px 32px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-top: 40px;
+  }
+  
+  .restart-btn:hover {
+	background-color: #43a047;
+  }
+  
